@@ -1,0 +1,27 @@
+.header {
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+  background: url('../img/bg.jpg') no-repeat 50% 70%;
+  background-size: cover;
+  position: relative;
+  .refresh {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 20px;
+    top: 20px;
+    transition: all .2s;
+    color: $refresh-icon-color;
+    &:hover {
+      transform: rotate(40deg);
+    }
+  }
+  .date {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 25px;
+    color: $date-color;
+    font-weight: bold;
+  }
+}
